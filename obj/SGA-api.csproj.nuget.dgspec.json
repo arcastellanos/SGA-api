@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rebecacastellanos/Desktop/repos/mis321/groupproject/SGA-api/SGA-api.csproj": {}
+    "/Users/aldenbarron/MIS321/SGA/api/SGA-api/SGA-api.csproj": {}
   },
   "projects": {
-    "/Users/rebecacastellanos/Desktop/repos/mis321/groupproject/SGA-api/SGA-api.csproj": {
+    "/Users/aldenbarron/MIS321/SGA/api/SGA-api/SGA-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rebecacastellanos/Desktop/repos/mis321/groupproject/SGA-api/SGA-api.csproj",
+        "projectUniqueName": "/Users/aldenbarron/MIS321/SGA/api/SGA-api/SGA-api.csproj",
         "projectName": "SGA-api",
-        "projectPath": "/Users/rebecacastellanos/Desktop/repos/mis321/groupproject/SGA-api/SGA-api.csproj",
-        "packagesPath": "/Users/rebecacastellanos/.nuget/packages/",
-        "outputPath": "/Users/rebecacastellanos/Desktop/repos/mis321/groupproject/SGA-api/obj/",
+        "projectPath": "/Users/aldenbarron/MIS321/SGA/api/SGA-api/SGA-api.csproj",
+        "packagesPath": "/Users/aldenbarron/.nuget/packages/",
+        "outputPath": "/Users/aldenbarron/MIS321/SGA/api/SGA-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rebecacastellanos/.nuget/NuGet/NuGet.Config"
+          "/Users/aldenbarron/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -49,6 +49,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "mysql.data": {
+              "target": "Package",
+              "version": "[8.0.32.1, )"
             }
           },
           "imports": [
@@ -70,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }
