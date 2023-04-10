@@ -25,7 +25,7 @@ namespace SGA_api.Database
             using MySqlDataReader rdr = cmd.ExecuteReader();
 
             while (rdr.Read()) {
-                Product temp = new Product(){ProductID = rdr.GetInt32(0), ProductName = rdr.GetString(1), ProductCategory = rdr.GetInt32(2), ProductPrice = rdr.GetInt32(3), ManagerID = rdr.GetInt32(4)};
+                Product temp = new Product(){ProductID = rdr.GetInt32(0), ProductName = rdr.GetString(1), ProductCategory = rdr.GetString(2), ProductPrice = rdr.GetDouble(3), ManagerID = rdr.GetInt32(4)};
                 allProducts.Add(temp);
             }
             return allProducts;

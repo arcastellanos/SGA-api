@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SGA_api.Models;
+using SGA_api.Database;
+using SGA_api.Interface;
+using Microsoft.AspNetCore.Cors;
 
 namespace SGA_api.Controllers
 {
@@ -12,32 +16,38 @@ namespace SGA_api.Controllers
     public class ProductsController : ControllerBase
     {
         // GET: api/Products
+        [EnableCors("OpenPolicy")]
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
+        public List<Product> Get()
+        {   
+            IReadData myProducts = new ReadProducts();
+            return myProducts.GetAllProducts();
         }
-
+    
         // GET: api/Products/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        // [EnableCors("OpenPolicy")]
+        // [HttpGet("{id}", Name = "Get")]
+        // public string Get(int id)
+        // {
+        //     return "value";
+        // }
 
         // POST: api/Products
+        [EnableCors("OpenPolicy")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Product myProduct)
         {
         }
 
         // PUT: api/Products/5
+        [EnableCors("OpenPolicy")]
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Product myProduct)
         {
         }
 
         // DELETE: api/Products/5
+        [EnableCors("OpenPolicy")]
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
