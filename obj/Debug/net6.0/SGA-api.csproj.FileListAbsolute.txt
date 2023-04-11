@@ -512,3 +512,13 @@ C:/Users/noaho/OneDrive/Documents/Coding/mis321/SGA-api/obj/Debug/net6.0/refint/
 C:/Users/noaho/OneDrive/Documents/Coding/mis321/SGA-api/obj/Debug/net6.0/SGA-api.pdb
 C:/Users/noaho/OneDrive/Documents/Coding/mis321/SGA-api/obj/Debug/net6.0/SGA-api.genruntimeconfig.cache
 C:/Users/noaho/OneDrive/Documents/Coding/mis321/SGA-api/obj/Debug/net6.0/ref/SGA-api.dll
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.csproj.AssemblyReference.cache
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.AssemblyInfoInputs.cache
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.AssemblyInfo.cs
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.csproj.CoreCompileInputs.cache
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.dll
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\refint\SGA-api.dll
+C:\Users\noaho\OneDrive\Documents\Coding\mis321\SGA-api\SGA-api\obj\Debug\net6.0\SGA-api.pdb

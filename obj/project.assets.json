@@ -9986,19 +9986,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/aldenbarron/.nuget/packages/": {}
+    "C:\\Users\\noaho\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aldenbarron/MIS321/SGA/api/SGA-api/SGA-api.csproj",
+      "projectUniqueName": "C:\\Users\\noaho\\OneDrive\\Documents\\Coding\\mis321\\SGA-api\\SGA-api\\SGA-api.csproj",
       "projectName": "SGA-api",
-      "projectPath": "/Users/aldenbarron/MIS321/SGA/api/SGA-api/SGA-api.csproj",
-      "packagesPath": "/Users/aldenbarron/.nuget/packages/",
-      "outputPath": "/Users/aldenbarron/MIS321/SGA/api/SGA-api/obj/",
+      "projectPath": "C:\\Users\\noaho\\OneDrive\\Documents\\Coding\\mis321\\SGA-api\\SGA-api\\SGA-api.csproj",
+      "packagesPath": "C:\\Users\\noaho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noaho\\OneDrive\\Documents\\Coding\\mis321\\SGA-api\\SGA-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/aldenbarron/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\noaho\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10058,7 +10058,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
