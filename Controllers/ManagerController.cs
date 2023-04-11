@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
+using SGA_api.Models;
+using SGA_api.Interface;
+using SGA_api.Database;
 
 namespace SGA_api.Controllers
 {
@@ -15,9 +18,10 @@ namespace SGA_api.Controllers
         // GET: api/Manager
         [EnableCors("OpenPolicy")]
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Manager> Get()
         {
-            return new string[] { "value1", "value2" };
+            IReadManagers myManagers = new ReadManagers();
+            return myManagers.GetAllManagers();
         }
 
         // GET: api/Manager/5
