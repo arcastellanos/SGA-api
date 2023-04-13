@@ -37,6 +37,8 @@ namespace SGA_api.Controllers
         [HttpPost]
         public void Post([FromBody] Product myProduct)
         {
+            ISaveProducts postObject = new SaveProducts();
+            postObject.PostProduct(myProduct);
         }
 
         // PUT: api/Products/5
@@ -44,6 +46,8 @@ namespace SGA_api.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Product myProduct)
         {
+            IUpdateProducts putObject = new UpdateProducts();
+            putObject.UpdateProduct(id, myProduct);
         }
 
         // DELETE: api/Products/5

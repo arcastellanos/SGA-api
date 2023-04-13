@@ -1,22 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using SGA_api.Models;
 using SGA_api.Interface;
 using MySql.Data.MySqlClient;
+
 namespace SGA_api.Database
 {
-    public class SaveProducts : ISaveProducts
+    public class UpdateProducts : IUpdateProducts
     {
-        public void PostProduct(Product myProduct)
+        public void UpdateProduct(int id, Product myProduct)
         {
             ConnectionString myConnection = new ConnectionString();
             string cs = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
+            string stm = @"UPDATE d82kvyquj6n9y0g6.PRODUCT set ProductID = @ProductID, ProductName = @ProductName,
+            ProductCategory = @ProductCategory, ProductPrice= @ProductPrice, ProductUrl = @ProductUrl,
+            ManagerID = @ManagerID where ProductID = @ProductID";
 
-            string stm = @"INSERT INTO d82kvyquj6n9y0g6.PRODUCT(ProductID, ProductName, ProductCategory,
-            ProductPrice, ProductUrl, ManagerID) 
-            VALUES(@ProductID, @ProductName, @ProductCategory, @ProductPrice, @ProductUrl, @ManagerID)";
-
-            using var cmd = new MySqlCommand(stm, con);
+            using var cmd = new MySqlCommand(stm,con);
 
             cmd.Parameters.AddWithValue("@ProductID", myProduct.ProductID);
             cmd.Parameters.AddWithValue("@ProductName", myProduct.ProductName);
@@ -27,7 +31,7 @@ namespace SGA_api.Database
 
             cmd.Prepare();
             cmd.ExecuteNonQuery();
-            con.Close();
+            System.Console.WriteLine(myProduct);
         }
     }
 }
