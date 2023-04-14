@@ -11,7 +11,7 @@ namespace SGA_api.Database
             string cs = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-
+            
             string stm = @"INSERT INTO d82kvyquj6n9y0g6.PRODUCT(ProductID, ProductName, ProductCategory,
             ProductPrice, ProductUrl, ManagerID) 
             VALUES(@ProductID, @ProductName, @ProductCategory, @ProductPrice, @ProductUrl, @ManagerID)";

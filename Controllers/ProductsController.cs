@@ -37,6 +37,7 @@ namespace SGA_api.Controllers
         [HttpPost]
         public void Post([FromBody] Product myProduct)
         {
+            //There is currently a 500 error but the database does update so it should be fine once the frontend works.
             ISaveProducts postObject = new SaveProducts();
             postObject.PostProduct(myProduct);
         }
