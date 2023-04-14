@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
+using SGA_api.Models;
+using SGA_api.Database;
+using SGA_api.Interface;
 
 namespace SGA_api.Controllers
 {
@@ -30,8 +33,10 @@ namespace SGA_api.Controllers
         // POST: api/Delivery
         [EnableCors("OpenPolicy")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Delivery myDelivery)
         {
+            ISaveDelivery postObject = new SaveDelivery();
+            postObject.PostDelivery(myDelivery);
         }
 
         // PUT: api/Delivery/5

@@ -3,7 +3,7 @@ using SGA_api.Interface;
 using MySql.Data.MySqlClient;
 namespace SGA_api.Database
 {
-    public class SaveCardInformation
+    public class SaveCardInformation : ISaveCardInformation
     {
         public void PostCardInformation(CardInfromation myCardInfo)
         {
