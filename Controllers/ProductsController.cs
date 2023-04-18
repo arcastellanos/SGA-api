@@ -54,8 +54,10 @@ namespace SGA_api.Controllers
         // DELETE: api/Products/5
         [EnableCors("OpenPolicy")]
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(int ProductID)
         {
+            IDeleteProducts delete = new DeleteProducts();
+            delete.DeleteProduct(ProductID);
         }
     }
 }
