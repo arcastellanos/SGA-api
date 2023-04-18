@@ -1,6 +1,6 @@
 namespace SGA_api.Models
 {
-    public class CardInfromation
+    public class CardInformation
     {
         public int CardID {get; set;}
         public string CardNumber {get; set;}

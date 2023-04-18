@@ -5,7 +5,7 @@ namespace SGA_api.Database
 {
     public class SaveCardInformation : ISaveCardInformation
     {
-        public void PostCardInformation(CardInfromation myCardInfo)
+        public void PostCardInformation(CardInformation myCardInfo)
         {
             ConnectionString myConnection = new ConnectionString();
             string cs = myConnection.cs;
