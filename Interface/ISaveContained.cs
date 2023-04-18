@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using SGA_api.Models;
 namespace SGA_api.Interface
 {
-    public interface ISaveCardInformation
+    public interface ISaveContained
     {
-        void PostCardInformation(CardInfromation myCardInfo);
+        void PostContained(Contained myContained);
     }
 }
