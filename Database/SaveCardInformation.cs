@@ -23,6 +23,7 @@ namespace SGA_api.Database
             cmd.Parameters.AddWithValue("@SecurityCode", myCardInfo.SecurityCode);
             cmd.Parameters.AddWithValue("@ExpDate", myCardInfo.ExpDate);
             cmd.Parameters.AddWithValue("@CHName", myCardInfo.CHName);
+            System.Console.WriteLine("are you getting here");
 
             cmd.Prepare();
             cmd.ExecuteNonQuery();

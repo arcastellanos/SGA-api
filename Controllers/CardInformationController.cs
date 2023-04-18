@@ -34,10 +34,12 @@ namespace SGA_api.Controllers
         // POST: api/CardInformation
         [EnableCors("OpenPolicy")]
         [HttpPost]
-        public void Post([FromBody] CardInfromation myCardInfo)
+        public void Post([FromBody] CardInformation myCardInfo)
         {
+            System.Console.WriteLine("am i here");
             ISaveCardInformation postObject = new SaveCardInformation();
             postObject.PostCardInformation(myCardInfo);
+
         }
 
         // PUT: api/CardInformation/5
