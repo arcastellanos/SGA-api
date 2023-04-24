@@ -5,7 +5,7 @@ namespace SGA_api.Models
         public int CardID {get; set;}
         public string CardNumber {get; set;}
         public string SecurityCode {get; set;}
-        public string ExpDate {get; set;}
+        public DateTime ExpDate {get; set;}
         public string CHName {get; set;} 
     }
 }
