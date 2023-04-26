@@ -27,7 +27,7 @@ namespace SGA_api.Database
             while (rdr.Read()) {
                 Product temp = new Product(){ProductID = rdr.GetInt32(0),
                 ProductName = rdr.GetString(1), ProductCategory = rdr.GetString(2),
-                ProductPrice = rdr.GetDouble(3), ProductUrl = rdr.GetString(4), ManagerID = rdr.GetInt32(5)};
+                ProductPrice = rdr.GetDouble(3), ProductUrl = rdr.GetString(4), ManagerID = rdr.GetInt32(5), Deleted = rdr.GetBoolean(6)};
                 allProducts.Add(temp);
             }
             return allProducts;

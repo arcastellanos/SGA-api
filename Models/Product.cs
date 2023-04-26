@@ -8,5 +8,6 @@ namespace SGA_api.Models
         public double ProductPrice {get; set;}
         public string ProductUrl {get; set;}
         public int ManagerID {get; set;}
+        public bool Deleted {get; set;}
     }
 }

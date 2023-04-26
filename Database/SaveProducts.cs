@@ -13,8 +13,8 @@ namespace SGA_api.Database
             con.Open();
             
             string stm = @"INSERT INTO d82kvyquj6n9y0g6.PRODUCT(ProductID, ProductName, ProductCategory,
-            ProductPrice, ProductUrl, ManagerID) 
-            VALUES(@ProductID, @ProductName, @ProductCategory, @ProductPrice, @ProductUrl, @ManagerID)";
+            ProductPrice, ProductUrl, ManagerID, Deleted) 
+            VALUES(@ProductID, @ProductName, @ProductCategory, @ProductPrice, @ProductUrl, @ManagerID, @Deleted)";
 
             using var cmd = new MySqlCommand(stm, con);
 
@@ -24,6 +24,7 @@ namespace SGA_api.Database
             cmd.Parameters.AddWithValue("@ProductPrice", myProduct.ProductPrice);
             cmd.Parameters.AddWithValue("@ProductUrl", myProduct.ProductUrl);
             cmd.Parameters.AddWithValue("@ManagerID", myProduct.ManagerID);
+            cmd.Parameters.AddWithValue("@Deleted", false);
 
             cmd.Prepare();
             cmd.ExecuteNonQuery();
