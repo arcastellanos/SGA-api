@@ -23,8 +23,9 @@ namespace SGA_api.Database
             cmd.Parameters.AddWithValue("@ProductCategory", myProduct.ProductCategory);
             cmd.Parameters.AddWithValue("@ProductPrice", myProduct.ProductPrice);
             cmd.Parameters.AddWithValue("@ProductUrl", myProduct.ProductUrl);
-            cmd.Parameters.AddWithValue("@ManagerID", myProduct.ManagerID);
             cmd.Parameters.AddWithValue("@Deleted", false);
+            cmd.Parameters.AddWithValue("@ManagerID", myProduct.ManagerID);
+            System.Console.WriteLine(myProduct.ProductName);
 
             cmd.Prepare();
             cmd.ExecuteNonQuery();

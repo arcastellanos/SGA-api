@@ -49,6 +49,7 @@ namespace SGA_api.Controllers
         {
             IUpdateProducts putObject = new UpdateProducts();
             putObject.UpdateProduct(id, myProduct);
+            System.Console.WriteLine(myProduct.ProductID);
         }
 
         // DELETE: api/Products/5
