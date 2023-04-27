@@ -17,7 +17,7 @@ namespace SGA_api.Database
             using var con = new MySqlConnection(cs);
             con.Open();
             string stm = @"UPDATE d82kvyquj6n9y0g6.PRODUCT set ProductID = @ProductID, ProductName = @ProductName,
-            ProductCategory = @ProductCategory, ProductPrice= @ProductPrice, ProductUrl = @ProductUrl,
+            ProductCategory = @ProductCategory, ProductPrice= @ProductPrice, ProductUrl = @ProductUrl, Deleted = @Deleted
             ManagerID = @ManagerID where ProductID = @ProductID";
 
             using var cmd = new MySqlCommand(stm,con);
@@ -28,6 +28,7 @@ namespace SGA_api.Database
             cmd.Parameters.AddWithValue("@ProductPrice", myProduct.ProductPrice);
             cmd.Parameters.AddWithValue("@ProductUrl", myProduct.ProductUrl);
             cmd.Parameters.AddWithValue("@ManagerID", myProduct.ManagerID);
+            cmd.Parameters.AddWithValue("@Deleted", false);
 
             cmd.Prepare();
             cmd.ExecuteNonQuery();
